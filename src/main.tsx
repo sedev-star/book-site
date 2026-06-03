@@ -13,6 +13,8 @@ function languageUrl(language: Language): string {
   return language === "fr" ? `${base}fr/` : base;
 }
 
+const imgUrl = (src: string) => import.meta.env.BASE_URL + src.slice(1);
+
 function App() {
   const language = getLanguageFromPath();
   const page = content[language];
@@ -44,7 +46,7 @@ function App() {
             </div>
             <div className="hero-photo-card">
               <img
-                src={page.heroImage}
+                src={imgUrl(page.heroImage)}
                 alt={page.heroImageAlt}
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
@@ -67,7 +69,7 @@ function App() {
             {pageSteps.map((step) => (
               <article className="step-card" key={step.id}>
                 <button className="step-image-button" type="button" onClick={() => setOpenGallery(step)} aria-label={`${page.galleryHint} ${step.title}`}>
-                  <img src={step.mainImage} alt={step.title} />
+                  <img src={imgUrl(step.mainImage)} alt={step.title} />
                   <span className="photo-badge"><Camera size={15} />{language === "nl" ? "Bekijk foto's" : "Voir les photos"}</span>
                 </button>
                 <div className="step-content"><h3>{step.title}</h3><p>{step.description}</p><p className="hint">{page.galleryHint}</p></div>
@@ -104,7 +106,7 @@ function App() {
           <div className="modal gallery-modal">
             <button className="modal-close" onClick={() => setOpenGallery(null)}><X size={18} />{page.galleryClose}</button>
             <h2>{openGallery.title}</h2>
-            <div className="gallery-grid">{openGallery.images.map((image, index) => <img key={image} src={image} alt={`${openGallery.title} ${index + 1}`} />)}</div>
+            <div className="gallery-grid">{openGallery.images.map((image, index) => <img key={image} src={imgUrl(image)} alt={`${openGallery.title} ${index + 1}`} />)}</div>
           </div>
         </div>
       )}
@@ -115,7 +117,7 @@ function App() {
             <button className="modal-close" onClick={() => setOpenRainbowPopup(false)}><X size={18} />{page.popupClose}</button>
             <h2>{page.popupTitle}</h2>
             <ol className="rainbow-steps">{page.popupSteps.map((step) => <li key={step}>{step}</li>)}</ol>
-            <div className="gallery-grid popup-gallery">{page.popupImages.map((image, index) => <img key={image} src={image} alt={`${page.popupTitle} ${index + 1}`} />)}</div>
+            <div className="gallery-grid popup-gallery">{page.popupImages.map((image, index) => <img key={image} src={imgUrl(image)} alt={`${page.popupTitle} ${index + 1}`} />)}</div>
           </div>
         </div>
       )}
