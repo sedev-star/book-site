@@ -91,7 +91,7 @@ export const content: Record<Language, PageContent> = {
     heroBadge: "Mijn allereerste boek",
     heroTitle: "Hoe ik als 6-jarige mijn eerste boek maakte",
     heroText:
-      "Op deze pagina leg ik uit hoe ik op het idee kwam, hoe ik het verhaal maakte en hoe mijn boek gepubliceerd werd.",
+      "Hallo, ik ben Anaïs. Op deze pagina leg ik uit hoe ik op het idee kwam, hoe ik het verhaal maakte en hoe mijn boek gepubliceerd werd.",
     heroImage: "/images/book1_photo.jpg",
     heroImageAlt: "Foto van het kinderboek met regenboog",
     navStory: "Ontdek het verhaal",
@@ -146,7 +146,7 @@ export const content: Record<Language, PageContent> = {
     heroBadge: "Mon tout premier livre",
     heroTitle: "Comment j’ai fait mon premier livre à 6 ans",
     heroText:
-      "Sur cette page, j’explique comment j’ai eu l’idée, comment j’ai construit l’histoire et comment j’ai publié mon livre.",
+      "Salut, je m'appelle Anaïs. Sur cette page, j’explique comment j’ai eu l’idée, comment j’ai construit l’histoire et comment j’ai publié mon livre.",
     heroImage: "/images/book1_photo.jpg",
     heroImageAlt: "Photo du livre pour enfants avec arc-en-ciel",
     navStory: "Découvrir l’histoire",
