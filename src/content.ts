@@ -147,7 +147,7 @@ export const content: Record<Language, PageContent> = {
     heroTitle: "Comment j’ai fait mon premier livre à 6 ans",
     heroText:
       "Salut, je m'appelle Anaïs. Sur cette page, j’explique comment j’ai eu l’idée, comment j’ai construit l’histoire et comment j’ai publié mon livre.",
-    heroImage: "/images/book1_photo.jpg",
+    heroImage: "/images/book1_photo_fr.jpg",
     heroImageAlt: "Photo du livre pour enfants avec arc-en-ciel",
     navStory: "Découvrir l’histoire",
     navLinks: "Voir les liens",
