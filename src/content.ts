@@ -42,7 +42,7 @@ export type PageContent = {
   footer: string;
 };
 
-export const amazonBookUrl = "https://www.amazon.nl/"; // Remplace par la vraie URL Amazon du livre.
+export const amazonBookUrl = "https://www.amazon.com.be/dp/908370730X";
 
 export const rainbowPopupImages = [
   "/images/book1_rainbow_1.jpg",
@@ -113,9 +113,9 @@ export const content: Record<Language, PageContent> = {
         title: "Schrijf een review van mijn boek op Amazon",
         description:
           "Vond je mijn boek leuk? Dan zou ik het superfijn vinden als je een review achterlaat op Amazon.",
-        // href: amazonBookUrl,
+        href: amazonBookUrl,
         buttonLabel: "Naar Amazon",
-        type: "coming-soon",
+        type: "external",
       },
       {
         title: "Maak thuis zelf een regenboog",
