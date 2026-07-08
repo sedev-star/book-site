@@ -43,6 +43,7 @@ export type PageContent = {
 };
 
 export const amazonBookUrl = "https://www.amazon.com.be/dp/908370730X";
+export const amazonBookUrlFr = "https://www.amazon.com.be/dp/9083707318";
 
 export const rainbowPopupImages = [
   "/images/book1_rainbow_1.jpg",
@@ -168,9 +169,9 @@ export const content: Record<Language, PageContent> = {
         title: "Fais une review de mon livre sur Amazon",
         description:
           "Si tu as aimé mon livre, tu peux laisser un petit avis sur Amazon.",
-        // href: amazonBookUrl,
+        href: amazonBookUrlFr,
         buttonLabel: "Aller sur Amazon",
-        type: "coming-soon",
+        type: "external",
       },
       {
         title: "Comment faire un arc-en-ciel à la maison",
